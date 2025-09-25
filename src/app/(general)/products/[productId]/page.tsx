@@ -5,4 +5,3 @@ export default async function ProductDetails({ params }: { params: Promise<{ pro
     <h1>Details about product {productId}</h1>
   );
 }
-             
