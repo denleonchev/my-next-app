@@ -2,7 +2,10 @@ import { Metadata } from "next";
 import { Counter } from "./couner";
 
 export const metadata: Metadata = {
-  title: "Counter",
+  title: {
+    absolute: "Counter",
+
+  },
   description: "Counter page",
 };
 
