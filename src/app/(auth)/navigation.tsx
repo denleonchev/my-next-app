@@ -10,7 +10,7 @@ const navLinks = [
   { name: "Forgot Password", href: "/forgot-password" },
 ] as const;
 
-export const Navigation = () => {
+export const AuthNavigation = () => {
     const pathname = usePathname();
     
     return (
