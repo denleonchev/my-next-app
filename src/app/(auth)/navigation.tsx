@@ -1,6 +1,5 @@
 "use client";
 
-import { link } from "fs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -19,7 +18,7 @@ export const AuthNavigation = () => {
                 const isActive = pathname === navLink.href
                     || pathname.startsWith(navLink.href);
 
-                return <Link href={navLink.href} className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}>{navLink.name}</Link>;
+                return <Link key={navLink.name} href={navLink.href} className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}>{navLink.name}</Link>;
             })}
         </nav>
     );
